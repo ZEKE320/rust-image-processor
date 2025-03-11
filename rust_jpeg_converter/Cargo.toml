@@ -1,5 +1,5 @@
 [package]
-name = "rust_jpeg_processor"
+name = "rust_jpeg_converter"
 version = "0.1.0"
 edition = "2024"
 authors = ["Your Name <your.email@example.com>"]
@@ -16,4 +16,4 @@ indicatif = { version = "0.17.7", features = ["rayon"] }
 anyhow = "1.0.75"
 rayon = "1.8.0"
 num_cpus = "1.16.0"
-kamadak-exif = "0.5.5"  # EXIFデータの処理用
+kamadak-exif = "0.5.5"
