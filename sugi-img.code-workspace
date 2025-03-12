@@ -3,13 +3,11 @@
     {
       "path": "."
     },
-
     {
       "path": "python"
     },
     {
       "path": "rust"
     }
-  ],
-  "settings": {}
+  ]
 }

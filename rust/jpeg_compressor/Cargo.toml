@@ -1,0 +1,28 @@
+[package]
+name = "jpeg_compressor"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "JPEG画像圧縮ユーティリティ"
+
+[dependencies]
+image = { version = "0.24.7", features = ["jpeg"] }
+walkdir = "2.4.0"
+clap = { version = "4.4.8", features = ["derive"] }
+log = "0.4.20"
+fern = { version = "0.6.2", features = ["colored"] }
+chrono = "0.4.31"
+indicatif = { version = "0.17.7", features = ["rayon"] }
+anyhow = "1.0.75"
+rayon = "1.8.0"
+num_cpus = "1.16.0"
+kamadak-exif = "0.5.5"
+colored = "2.0.4"
+regex = "1.11.0"
+mozjpeg = { version = "0.10.13", optional = true }
+
+[features]
+default = ["mozjpeg-encoder"]
+mozjpeg-encoder = ["dep:mozjpeg"]
+image-encoder = []
+
