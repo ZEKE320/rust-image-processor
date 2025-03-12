@@ -1,10 +1,12 @@
-//! JPEG画像処理ライブラリ
+//! JPEG変換ユーティリティのライブラリクレート
 //!
-//! このライブラリは画像ファイルをJPEG形式で最適化して保存する機能を提供します。
+//! 指定されたディレクトリ内のJPEG画像を処理し、
+//! ディレクトリ構造を維持しながら出力します。
 
-pub mod cli;
-pub mod logger;
-pub mod processor;
+// 必要に応じてモジュールを追加できます
+// pub mod example;
 
-// 主要な型やユーティリティを再エクスポート
-pub use crate::processor::process_images;
+/// プレースホルダー関数
+pub fn version() -> &'static str {
+    env!("CARGO_PKG_VERSION")
+}
